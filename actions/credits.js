@@ -19,7 +19,7 @@ const APPOINTMENT_CREDIT_COST = 2;
  * Checks user's subscription and allocates monthly credits if needed
  * This should be called on app initialization (e.g., in a layout component)
  */
-export async function checkAndAllocateCredits(user) {
+export async function  checkAndAllocateCredits(user) {
   try {
     if (!user) {
       return null;
