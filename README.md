@@ -1,4 +1,9 @@
-# Full Stack Doctors Appointment Platform with Next JS, Neon, Tailwind, Vonage, Shadcn UI Tutorial 🔥🔥
-## https://www.youtube.com/watch?v=ID1PRFF1dlw
+# Health Bridge
+## Shadcn:
+npx shadcn@latest init
+npx shadc@latest add alert dialog label
 
-<img width="1470" alt="Screenshot 2025-05-27 at 1 18 06 PM" src="https://github.com/user-attachments/assets/a0d3d443-f5e1-433a-85a7-a76a3866858d" />
+## Prisma:
+npx prisma init
+npx prisma generate
+npx prisma migrate dev
