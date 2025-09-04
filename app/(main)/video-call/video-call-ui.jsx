@@ -15,8 +15,10 @@ import {
   User,
 } from "lucide-react";
 import { toast } from "sonner";
+import { useError } from "@/context/error-context";
 
 export default function VideoCall({ sessionId, token }) {
+  const { setError } = useError();
   const [isLoading, setIsLoading] = useState(true);
   const [scriptLoaded, setScriptLoaded] = useState(false);
   const [isConnected, setIsConnected] = useState(false);
@@ -34,7 +36,7 @@ export default function VideoCall({ sessionId, token }) {
   const handleScriptLoad = () => {
     setScriptLoaded(true);
     if (!window.OT) {
-      toast.error("Failed to load Vonage Video API");
+      setError("Failed to load video call service. Please try again.");
       setIsLoading(false);
       return;
     }
@@ -44,7 +46,7 @@ export default function VideoCall({ sessionId, token }) {
   // Initialize video session
   const initializeSession = () => {
     if (!appId || !sessionId || !token) {
-      toast.error("Missing required video call parameters");
+      setError("Invalid video call session. Missing required parameters.");
       router.push("/appointments");
       return;
     }
@@ -69,7 +71,7 @@ export default function VideoCall({ sessionId, token }) {
           },
           (error) => {
             if (error) {
-              toast.error("Error connecting to other participant's stream");
+              setError("Failed to connect to other participant's video stream. Please check your internet connection.");
             }
           }
         );
@@ -93,7 +95,7 @@ export default function VideoCall({ sessionId, token }) {
           (error) => {
             if (error) {
               console.error("Publisher error:", error);
-              toast.error("Error initializing your camera and microphone");
+              setError("Unable to access your camera and microphone. Please check your browser permissions and try again.");
             } else {
               console.log(
                 "Publisher initialized successfully - you should see your video now"
@@ -110,14 +112,14 @@ export default function VideoCall({ sessionId, token }) {
       // Connect to the session
       sessionRef.current.connect(token, (error) => {
         if (error) {
-          toast.error("Error connecting to video session");
+          setError("Failed to connect to video session. Please check your internet connection and try again.");
         } else {
           // Publish your stream AFTER connecting
           if (publisherRef.current) {
             sessionRef.current.publish(publisherRef.current, (error) => {
               if (error) {
                 console.log("Error publishing stream:", error);
-                toast.error("Error publishing your stream");
+                setError("Failed to share your video stream. Please check your camera and microphone permissions.");
               } else {
                 console.log("Stream published successfully");
               }
@@ -126,7 +128,7 @@ export default function VideoCall({ sessionId, token }) {
         }
       });
     } catch (error) {
-      toast.error("Failed to initialize video call");
+      setError("Failed to initialize video call. Please refresh the page and try again.");
       setIsLoading(false);
     }
   };
@@ -201,7 +203,7 @@ export default function VideoCall({ sessionId, token }) {
         src="https://unpkg.com/@vonage/client-sdk-video@latest/dist/js/opentok.js"
         onLoad={handleScriptLoad}
         onError={() => {
-          toast.error("Failed to load video call script");
+          setError("Failed to load video call service. Please check your internet connection and try again.");
           setIsLoading(false);
         }}
       />
