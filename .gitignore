@@ -44,6 +44,6 @@ lib/private.key
 /.clerk/
 
 /lib/generated/prisma
-/lib/private. key You,
+/lib/private.key,
 
 /lib/generated/prisma
