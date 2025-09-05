@@ -14,24 +14,36 @@ export default function Home() {
       <section className="relative overflow-hidden py-32">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <Badge
-                variant="outline"
-                className="bg-blue-900/30 border-blue-700/30 px-4 py-2 text-blue-500 text-sm font-medium"
-              >
-                Bridging you to better health
-              </Badge>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                Doctors at your fingertips <br />
-                <span className="gradient-title text-blue-500">
-                  always within reach
-                </span>
-              </h1>
-              <p className="text-muted-foreground text-lg md:text-xl max-w-md">
-                From appointments to video consultations, manage every step of
-                your healthcare securely in one platform.g
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+            <div className="relative h-[450px] lg:h-[550px] rounded-xl overflow-hidden order-last lg:order-first">
+              <Image
+                src="/doctors.jpeg"
+                alt="Doctor consultation"
+                fill
+                priority
+                className="object-cover"
+              />
+            </div>
+
+            <div className="space-y-8 lg:pl-8">
+              <div className="flex flex-col items-start">
+                <Badge
+                  variant="outline"
+                  className="bg-blue-900/30 border-blue-700/30 px-4 py-2 text-blue-500 text-sm font-medium mb-6"
+                >
+                  Bridging you to better health
+                </Badge>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                  Doctors at your fingertips{" "}
+                  <span className="gradient-title text-blue-500 block mt-2">
+                    always within reach
+                  </span>
+                </h1>
+                <p className="text-muted-foreground text-lg md:text-xl mt-6">
+                  From appointments to video consultations, manage every step of
+                  your healthcare securely in one platform.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button
                   asChild
                   size="lg"
@@ -50,16 +62,6 @@ export default function Home() {
                   <Link href="/doctors">Connect with doctors</Link>
                 </Button>
               </div>
-            </div>
-
-            <div className="relative h-[450px] lg:h-[550px] rounded-xl overflow-hidden">
-              <Image
-                src="/doctors.jpeg"
-                alt="Doctor consultation"
-                fill
-                priority
-                className="object-cover"
-              />
             </div>
           </div>
         </div>
