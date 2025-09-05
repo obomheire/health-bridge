@@ -128,7 +128,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle className="text-xl font-semibold text-white flex items-center">
                   <Stethoscope className="h-5 w-5 mr-2 text-blue-500" />
-                  How Our Credit System Works
+                  Understanding Our Credit System
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -172,13 +172,13 @@ export default function Home() {
               variant="outline"
               className="bg-blue-900/30 border-blue-700/30 px-4 py-1 text-blue-500 text-sm font-medium mb-4"
             >
-              Success Stories
+              Voices of Trust
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              What Our Users Say
+              Why People Choose Us
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Hear from patients and doctors who use our platform
+              Trusted by patients and doctors worldwide
             </p>
           </div>
 
@@ -221,12 +221,11 @@ export default function Home() {
             <CardContent className="p-8 md:p-12 lg:p-16 relative overflow-hidden">
               <div className="max-w-2xl relative z-10">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                  Ready to take control of your healthcare?
+                  Take the next step toward better health
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Join thousands of users who have simplified their healthcare
-                  journey with our platform. Get started today and experience
-                  healthcare the way it should be.
+                  Experience healthcare the way it was meant to be; simple,
+                  accessible, and trusted by thousands
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button
@@ -234,7 +233,7 @@ export default function Home() {
                     size="lg"
                     className="bg-blue-600 text-white hover:bg-blue-700"
                   >
-                    <Link href="/sign-up">Sign Up Now</Link>
+                    <Link href="/sign-up">Join HealthBridge</Link>
                   </Button>
                   <Button
                     asChild
@@ -242,7 +241,7 @@ export default function Home() {
                     size="lg"
                     className="border-blue-700/30 hover:bg-muted/80"
                   >
-                    <Link href="#pricing">View Pricing</Link>
+                    <Link href="#pricing">Explore Plans</Link>
                   </Button>
                 </div>
               </div>

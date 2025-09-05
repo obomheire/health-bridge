@@ -28,7 +28,7 @@ export default async function PatientAppointmentsPage() {
         <CardHeader>
           <CardTitle className="text-xl font-bold text-white flex items-center">
             <Calendar className="h-5 w-5 mr-2 text-blue-400" />
-            Your Scheduled Appointments
+            Your Scheduled Visits
           </CardTitle>
         </CardHeader>
         <CardContent>
