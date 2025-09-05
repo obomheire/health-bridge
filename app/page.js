@@ -17,13 +17,15 @@ export default function Home() {
             <div className="space-y-8">
               <Badge
                 variant="outline"
-                className="bg-emerald-900/30 border-emerald-700/30 px-4 py-2 text-emerald-400 text-sm font-medium"
+                className="bg-emerald-900/30 border-emerald-700/30 px-4 py-2 text-blue-500 text-sm font-medium"
               >
                 Bridging you to better health
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Doctors at your fingertips <br />
-                <span className="gradient-title">always within reach</span>
+                <span className="gradient-title text-blue-500">
+                  always within reach
+                </span>
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl max-w-md">
                 From appointments to video consultations, manage every step of
@@ -33,7 +35,7 @@ export default function Home() {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-emerald-600 text-white hover:bg-emerald-700"
+                  className="bg-blue-600 text-white hover:bg-blue-700"
                 >
                   <Link href="/onboarding">
                     Get Started <ArrowRight className="ml-2 h-4 w-4" />
@@ -67,7 +69,7 @@ export default function Home() {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-500 mb-4">
               Seamless Healthcare Steps
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -85,7 +87,7 @@ export default function Home() {
                   <div className="bg-emerald-900/20 p-3 rounded-lg w-fit mb-4">
                     {feature.icon}
                   </div>
-                  <CardTitle className="text-xl font-semibold text-white">
+                  <CardTitle className="text-xl font-semibold text-blue-500">
                     {feature.title}
                   </CardTitle>
                 </CardHeader>
@@ -104,7 +106,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <Badge
               variant="outline"
-              className="bg-emerald-900/30 border-emerald-700/30 px-4 py-1 text-emerald-400 text-sm font-medium mb-4"
+              className="bg-emerald-900/30 border-emerald-700/30 px-4 py-1 text-blue-500 text-sm font-medium mb-4"
             >
               Affordable Healthcare
             </Badge>
@@ -125,7 +127,7 @@ export default function Home() {
             <Card className="mt-12 bg-muted/20 border-emerald-900/30">
               <CardHeader>
                 <CardTitle className="text-xl font-semibold text-white flex items-center">
-                  <Stethoscope className="h-5 w-5 mr-2 text-emerald-400" />
+                  <Stethoscope className="h-5 w-5 mr-2 text-blue-500" />
                   How Our Credit System Works
                 </CardTitle>
               </CardHeader>
@@ -135,7 +137,7 @@ export default function Home() {
                     <li key={index} className="flex items-start">
                       <div className="mr-3 mt-1 bg-emerald-900/20 p-1 rounded-full">
                         <svg
-                          className="h-4 w-4 text-emerald-400"
+                          className="h-4 w-4 text-blue-500"
                           fill="none"
                           stroke="currentColor"
                           viewBox="0 0 24 24"
@@ -168,7 +170,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <Badge
               variant="outline"
-              className="bg-emerald-900/30 border-emerald-700/30 px-4 py-1 text-emerald-400 text-sm font-medium mb-4"
+              className="bg-emerald-900/30 border-emerald-700/30 px-4 py-1 text-blue-500 text-sm font-medium mb-4"
             >
               Success Stories
             </Badge>
@@ -189,7 +191,7 @@ export default function Home() {
                 <CardContent className="pt-6">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 rounded-full bg-emerald-900/20 flex items-center justify-center mr-4">
-                      <span className="text-emerald-400 font-bold">
+                      <span className="text-blue-400 font-bold">
                         {testimonial.initials}
                       </span>
                     </div>
@@ -230,7 +232,7 @@ export default function Home() {
                   <Button
                     asChild
                     size="lg"
-                    className="bg-emerald-600 text-white hover:bg-emerald-700"
+                    className="bg-blue-600 text-white hover:bg-blue-700"
                   >
                     <Link href="/sign-up">Sign Up Now</Link>
                   </Button>
