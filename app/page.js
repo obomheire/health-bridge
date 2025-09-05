@@ -19,15 +19,15 @@ export default function Home() {
                 variant="outline"
                 className="bg-emerald-900/30 border-emerald-700/30 px-4 py-2 text-emerald-400 text-sm font-medium"
               >
-                Healthcare made simple
+                Bridging you to better health
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                Connect with doctors <br />
-                <span className="gradient-title">anytime, anywhere with HealthBridge</span>
+                Doctors at your fingertips <br />
+                <span className="gradient-title">always within reach</span>
               </h1>
               <p className="text-muted-foreground text-lg md:text-xl max-w-md">
-                Book appointments, consult via video, and manage your healthcare
-                journey all in one secure platform.
+                From appointments to video consultations, manage every step of
+                your healthcare securely in one platform.g
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
@@ -45,7 +45,7 @@ export default function Home() {
                   size="lg"
                   className="border-emerald-700/30 hover:bg-muted/80"
                 >
-                  <Link href="/doctors">Find Doctors</Link>
+                  <Link href="/doctors">Connect with doctors</Link>
                 </Button>
               </div>
             </div>
@@ -68,10 +68,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              How It Works
+              Seamless Healthcare Steps
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Our platform makes healthcare accessible with just a few clicks
+              Healthcare at your fingertips - fast, simple, accessible.
             </p>
           </div>
 
