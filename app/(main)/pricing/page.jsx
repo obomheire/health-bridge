@@ -26,7 +26,7 @@ export default async function PricingPage() {
           Affordable Healthcare
         </Badge>
 
-        <h1 className="text-4xl md:text-5xl font-bold gradient-title mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold gradient-title text-blue-500 mb-4">
           Simple, Transparent Pricing
         </h1>
 
