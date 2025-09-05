@@ -105,7 +105,7 @@ export default async function Header() {
             <Link href={user?.role === "PATIENT" ? "/pricing" : "/doctor"}>
               <Badge
                 variant="outline"
-                className="h-9 bg-emerald-900/20 border-blue-700/30 px-3 py-1 flex items-center gap-2"
+                className="h-9 bg-blue-900/20 border-blue-700/30 px-3 py-1 flex items-center gap-2"
               >
                 <CreditCard className="h-3.5 w-3.5 text-blue-500" />
                 <span className="text-blue-500">

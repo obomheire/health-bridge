@@ -77,7 +77,7 @@ export function PendingPayouts({ payouts }) {
 
   return (
     <div>
-      <Card className="bg-muted/20 border-emerald-900/20">
+      <Card className="bg-muted/20 border-blue-900/20">
         <CardHeader>
           <CardTitle className="text-xl font-bold text-white">
             Pending Payouts
@@ -96,7 +96,7 @@ export function PendingPayouts({ payouts }) {
               {payouts.map((payout) => (
                 <Card
                   key={payout.id}
-                  className="bg-background border-emerald-900/20 hover:border-emerald-700/30 transition-all"
+                  className="bg-background border-blue-900/20 hover:border-blue-700/30 transition-all"
                 >
                   <CardContent className="p-4">
                     <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
@@ -230,7 +230,7 @@ export function PendingPayouts({ payouts }) {
                   <DollarSign className="h-5 w-5 text-blue-500" />
                   <h3 className="text-white font-medium">Payout Details</h3>
                 </div>
-                <div className="bg-muted/20 p-4 rounded-lg border border-emerald-900/20 space-y-3">
+                <div className="bg-muted/20 p-4 rounded-lg border border-blue-900/20 space-y-3">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">
                       Credits to pay out:
@@ -255,13 +255,13 @@ export function PendingPayouts({ payouts }) {
                       -${selectedPayout.platformFee.toFixed(2)}
                     </span>
                   </div>
-                  <div className="border-t border-emerald-900/20 pt-3 flex justify-between font-medium">
+                  <div className="border-t border-blue-900/20 pt-3 flex justify-between font-medium">
                     <span className="text-white">Net payout:</span>
                     <span className="text-blue-500">
                       ${selectedPayout.netAmount.toFixed(2)}
                     </span>
                   </div>
-                  <div className="border-t border-emerald-900/20 pt-3">
+                  <div className="border-t border-blue-900/20 pt-3">
                     <p className="text-sm font-medium text-muted-foreground">
                       PayPal Email
                     </p>
@@ -288,7 +288,7 @@ export function PendingPayouts({ payouts }) {
               <Button
                 variant="outline"
                 onClick={closeDialogs}
-                className="border-emerald-900/30"
+                className="border-blue-900/30"
               >
                 Close
               </Button>
@@ -339,7 +339,7 @@ export function PendingPayouts({ payouts }) {
                 </AlertDescription>
               </Alert>
 
-              <div className="bg-muted/20 p-4 rounded-lg border border-emerald-900/20">
+              <div className="bg-muted/20 p-4 rounded-lg border border-blue-900/20">
                 <div className="flex justify-between mb-2">
                   <span className="text-muted-foreground">Doctor:</span>
                   <span className="text-white">
@@ -368,7 +368,7 @@ export function PendingPayouts({ payouts }) {
                 variant="outline"
                 onClick={() => setShowApproveDialog(false)}
                 disabled={loading}
-                className="border-emerald-900/30"
+                className="border-blue-900/30"
               >
                 Cancel
               </Button>

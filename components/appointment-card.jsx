@@ -228,7 +228,7 @@ export function AppointmentCard({
 
   return (
     <>
-      <Card className="border-emerald-900/20 hover:border-emerald-700/30 transition-all">
+      <Card className="border-blue-900/20 hover:border-blue-700/30 transition-all">
         <CardContent className="p-4">
           <div className="flex flex-col md:flex-row justify-between gap-4">
             <div className="flex items-start gap-3">
@@ -269,7 +269,7 @@ export function AppointmentCard({
                 variant="outline"
                 className={
                   appointment.status === "COMPLETED"
-                    ? "bg-emerald-900/20 border-emerald-900/30 text-blue-500"
+                    ? "bg-blue-900/20 border-blue-900/30 text-blue-500"
                     : appointment.status === "CANCELLED"
                     ? "bg-red-900/20 border-red-900/30 text-red-400"
                     : "bg-amber-900/20 border-amber-900/30 text-amber-400"
@@ -283,7 +283,7 @@ export function AppointmentCard({
                     size="sm"
                     onClick={handleMarkCompleted}
                     disabled={completeLoading}
-                    className="bg-emerald-600 hover:bg-emerald-700"
+                    className="bg-blue-600 hover:bg-blue-700"
                   >
                     {completeLoading ? (
                       <Loader2 className="h-4 w-4 animate-spin" />
@@ -298,7 +298,7 @@ export function AppointmentCard({
                 <Button
                   size="sm"
                   variant="outline"
-                  className="border-emerald-900/30"
+                  className="border-blue-900/30"
                   onClick={() => setOpen(true)}
                 >
                   View Details
@@ -384,7 +384,7 @@ export function AppointmentCard({
                 variant="outline"
                 className={
                   appointment.status === "COMPLETED"
-                    ? "bg-emerald-900/20 border-emerald-900/30 text-blue-500"
+                    ? "bg-blue-900/20 border-blue-900/30 text-blue-500"
                     : appointment.status === "CANCELLED"
                     ? "bg-red-900/20 border-red-900/30 text-red-400"
                     : "bg-amber-900/20 border-amber-900/30 text-amber-400"
@@ -402,7 +402,7 @@ export function AppointmentCard({
                     ? "Patient Description"
                     : "Your Description"}
                 </h4>
-                <div className="p-3 rounded-md bg-muted/20 border border-emerald-900/20">
+                <div className="p-3 rounded-md bg-muted/20 border border-blue-900/20">
                   <p className="text-white whitespace-pre-line">
                     {appointment.patientDescription}
                   </p>
@@ -453,7 +453,7 @@ export function AppointmentCard({
                       variant="ghost"
                       size="sm"
                       onClick={() => setAction("notes")}
-                      className="h-7 text-blue-500 hover:text-emerald-300 hover:bg-emerald-900/20"
+                      className="h-7 text-blue-500 hover:text-blue-300 hover:bg-blue-900/20"
                     >
                       <Edit className="h-3.5 w-3.5 mr-1" />
                       {appointment.notes ? "Edit" : "Add"}
@@ -467,7 +467,7 @@ export function AppointmentCard({
                     value={notes}
                     onChange={(e) => setNotes(e.target.value)}
                     placeholder="Enter your clinical notes here..."
-                    className="bg-background border-emerald-900/20 min-h-[100px]"
+                    className="bg-background border-blue-900/20 min-h-[100px]"
                   />
                   <div className="flex justify-end space-x-2">
                     <Button
@@ -479,7 +479,7 @@ export function AppointmentCard({
                         setNotes(appointment.notes || "");
                       }}
                       disabled={notesLoading}
-                      className="border-emerald-900/30"
+                      className="border-blue-900/30"
                     >
                       Cancel
                     </Button>
@@ -487,7 +487,7 @@ export function AppointmentCard({
                       size="sm"
                       onClick={handleSaveNotes}
                       disabled={notesLoading}
-                      className="bg-emerald-600 hover:bg-emerald-700"
+                      className="bg-blue-600 hover:bg-blue-700"
                     >
                       {notesLoading ? (
                         <>
@@ -501,7 +501,7 @@ export function AppointmentCard({
                   </div>
                 </div>
               ) : (
-                <div className="p-3 rounded-md bg-muted/20 border border-emerald-900/20 min-h-[80px]">
+                <div className="p-3 rounded-md bg-muted/20 border border-blue-900/20 min-h-[80px]">
                   {appointment.notes ? (
                     <p className="text-white whitespace-pre-line">
                       {appointment.notes}
@@ -523,7 +523,7 @@ export function AppointmentCard({
                 <Button
                   onClick={handleMarkCompleted}
                   disabled={completeLoading}
-                  className="bg-emerald-600 hover:bg-emerald-700"
+                  className="bg-blue-600 hover:bg-blue-700"
                 >
                   {completeLoading ? (
                     <>

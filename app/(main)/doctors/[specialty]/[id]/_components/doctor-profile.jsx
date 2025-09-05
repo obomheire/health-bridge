@@ -64,10 +64,10 @@ export function DoctorProfile({ doctor, availableDays }) {
       {/* Left column - Doctor Photo and Quick Info (fixed on scroll) */}
       <div className="md:col-span-1">
         <div className="md:sticky md:top-24">
-          <Card className="border-emerald-900/20">
+          <Card className="border-blue-900/20">
             <CardContent className="pt-6">
               <div className="flex flex-col items-center text-center">
-                <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4 bg-emerald-900/20">
+                <div className="relative w-32 h-32 rounded-full overflow-hidden mb-4 bg-blue-900/20">
                   {doctor.imageUrl ? (
                     <Image
                       src={doctor.imageUrl}
@@ -88,7 +88,7 @@ export function DoctorProfile({ doctor, availableDays }) {
 
                 <Badge
                   variant="outline"
-                  className="bg-emerald-900/20 border-emerald-900/30 text-blue-500 mb-4"
+                  className="bg-blue-900/20 border-blue-900/30 text-blue-500 mb-4"
                 >
                   {doctor.specialty}
                 </Badge>
@@ -124,7 +124,7 @@ export function DoctorProfile({ doctor, availableDays }) {
 
       {/* Right column - Doctor Details and Booking Section */}
       <div className="md:col-span-2 space-y-6">
-        <Card className="border-emerald-900/20">
+        <Card className="border-blue-900/20">
           <CardHeader>
             <CardTitle className="text-xl font-bold text-white">
               About Dr. {doctor.name}
@@ -144,7 +144,7 @@ export function DoctorProfile({ doctor, availableDays }) {
               </p>
             </div>
 
-            <Separator className="bg-emerald-900/20" />
+            <Separator className="bg-blue-900/20" />
 
             <div className="space-y-4">
               <div className="flex items-center gap-2">
@@ -175,7 +175,7 @@ export function DoctorProfile({ doctor, availableDays }) {
         {/* Booking Section - Conditionally rendered */}
         {showBooking && (
           <div id="booking-section">
-            <Card className="border-emerald-900/20">
+            <Card className="border-blue-900/20">
               <CardHeader>
                 <CardTitle className="text-xl font-bold text-white">
                   Book an Appointment
