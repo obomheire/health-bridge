@@ -224,7 +224,7 @@ export default function VideoCall({ sessionId, token }) {
 
         {isLoading && !scriptLoaded ? (
           <div className="flex flex-col items-center justify-center py-12">
-            <Loader2 className="h-12 w-12 text-emerald-400 animate-spin mb-4" />
+            <Loader2 className="h-12 w-12 text-blue-500 animate-spin mb-4" />
             <p className="text-white text-lg">
               Loading video call components...
             </p>
@@ -234,7 +234,7 @@ export default function VideoCall({ sessionId, token }) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Publisher (Your video) */}
               <div className="border border-emerald-900/20 rounded-lg overflow-hidden">
-                <div className="bg-emerald-900/10 px-3 py-2 text-emerald-400 text-sm font-medium">
+                <div className="bg-emerald-900/10 px-3 py-2 text-blue-500 text-sm font-medium">
                   You
                 </div>
                 <div
@@ -244,7 +244,7 @@ export default function VideoCall({ sessionId, token }) {
                   {!scriptLoaded && (
                     <div className="flex items-center justify-center h-full">
                       <div className="bg-muted/20 rounded-full p-8">
-                        <User className="h-12 w-12 text-emerald-400" />
+                        <User className="h-12 w-12 text-blue-500" />
                       </div>
                     </div>
                   )}
@@ -253,7 +253,7 @@ export default function VideoCall({ sessionId, token }) {
 
               {/* Subscriber (Other person's video) */}
               <div className="border border-emerald-900/20 rounded-lg overflow-hidden">
-                <div className="bg-emerald-900/10 px-3 py-2 text-emerald-400 text-sm font-medium">
+                <div className="bg-emerald-900/10 px-3 py-2 text-blue-500 text-sm font-medium">
                   Other Participant
                 </div>
                 <div

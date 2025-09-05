@@ -95,7 +95,7 @@ export default function OnboardingPage() {
         >
           <CardContent className="pt-6 pb-6 flex flex-col items-center text-center">
             <div className="p-4 bg-emerald-900/20 rounded-full mb-4">
-              <User className="h-8 w-8 text-emerald-400" />
+              <User className="h-8 w-8 text-blue-500" />
             </div>
             <CardTitle className="text-xl font-semibold text-white mb-2">
               Join as a Patient
@@ -126,7 +126,7 @@ export default function OnboardingPage() {
         >
           <CardContent className="pt-6 pb-6 flex flex-col items-center text-center">
             <div className="p-4 bg-emerald-900/20 rounded-full mb-4">
-              <Stethoscope className="h-8 w-8 text-emerald-400" />
+              <Stethoscope className="h-8 w-8 text-blue-500" />
             </div>
             <CardTitle className="text-xl font-semibold text-white mb-2">
               Join as a Doctor
@@ -178,7 +178,7 @@ export default function OnboardingPage() {
                       value={spec.name}
                       className="flex items-center gap-2"
                     >
-                      <span className="text-emerald-400">{spec.icon}</span>
+                      <span className="text-blue-500">{spec.icon}</span>
                       {spec.name}
                     </SelectItem>
                   ))}

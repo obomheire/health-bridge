@@ -77,7 +77,7 @@ export function DoctorProfile({ doctor, availableDays }) {
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
-                      <User className="h-16 w-16 text-emerald-400" />
+                      <User className="h-16 w-16 text-blue-500" />
                     </div>
                   )}
                 </div>

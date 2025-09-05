@@ -90,7 +90,7 @@ export function PendingDoctors({ doctors }) {
                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                       <div className="flex items-center gap-3">
                         <div className="bg-muted/20 rounded-full p-2">
-                          <User className="h-5 w-5 text-emerald-400" />
+                          <User className="h-5 w-5 text-blue-500" />
                         </div>
                         <div>
                           <h3 className="font-medium text-white">
@@ -175,7 +175,7 @@ export function PendingDoctors({ doctors }) {
               {/* Professional Details */}
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
-                  <Medal className="h-5 w-5 text-emerald-400" />
+                  <Medal className="h-5 w-5 text-blue-500" />
                   <h3 className="text-white font-medium">
                     Professional Information
                   </h3>
@@ -207,7 +207,7 @@ export function PendingDoctors({ doctors }) {
                         href={selectedDoctor.credentialUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-emerald-400 hover:text-emerald-300 flex items-center"
+                        className="text-blue-500 hover:text-emerald-300 flex items-center"
                       >
                         View Credentials
                         <ExternalLink className="h-4 w-4 ml-1" />
@@ -222,7 +222,7 @@ export function PendingDoctors({ doctors }) {
               {/* Description */}
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
-                  <FileText className="h-5 w-5 text-emerald-400" />
+                  <FileText className="h-5 w-5 text-blue-500" />
                   <h3 className="text-white font-medium">
                     Service Description
                   </h3>
