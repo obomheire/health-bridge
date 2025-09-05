@@ -263,7 +263,7 @@ export default function VideoCall({ sessionId, token }) {
                   {(!isConnected || !scriptLoaded) && (
                     <div className="flex items-center justify-center h-full">
                       <div className="bg-muted/20 rounded-full p-8">
-                        <User className="h-12 w-12 text-emerald-400" />
+                        <User className="h-12 w-12 text-blue-500" />
                       </div>
                     </div>
                   )}

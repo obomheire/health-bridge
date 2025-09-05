@@ -19,7 +19,7 @@ export default async function PatientAppointmentsPage() {
     <div className="container mx-auto px-4 py-8">
       <PageHeader
         icon={<Calendar />}
-        title="My Appointments"
+        title="Scheduled Visits"
         backLink="/doctors"
         backLabel="Find Doctors"
       />

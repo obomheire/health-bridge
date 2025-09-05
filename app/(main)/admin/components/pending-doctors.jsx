@@ -252,7 +252,7 @@ export function PendingDoctors({ doctors }) {
                   handleUpdateStatus(selectedDoctor.id, "VERIFIED")
                 }
                 disabled={loading}
-                className="bg-emerald-600 hover:bg-emerald-700"
+                className="bg-blue-600 hover:bg-blue-700"
               >
                 <Check className="mr-2 h-4 w-4" />
                 Approve

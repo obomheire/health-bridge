@@ -26,7 +26,7 @@ export function DoctorCard({ doctor }) {
               <h3 className="font-medium text-white text-lg">{doctor.name}</h3>
               <Badge
                 variant="outline"
-                className="bg-emerald-900/20 border-emerald-900/30 text-emerald-400 self-start"
+                className="bg-emerald-900/20 border-emerald-900/30 text-blue-500 self-start"
               >
                 <Star className="h-3 w-3 mr-1" />
                 Verified
@@ -43,7 +43,7 @@ export function DoctorCard({ doctor }) {
 
             <Button
               asChild
-              className="w-full bg-emerald-500 hover:bg-emerald-600 mt-2"
+              className="w-full bg-blue-500 hover:bg-blue-600 mt-2"
             >
               <Link href={`/doctors/${doctor.specialty}/${doctor.id}`}>
                 <Calendar className="h-4 w-4 mr-2" />

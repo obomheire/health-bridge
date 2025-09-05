@@ -330,7 +330,7 @@ export function AppointmentCard({
                 {otherPartyLabel}
               </h4>
               <div className="flex items-center">
-                <div className="h-5 w-5 text-emerald-400 mr-2">
+                <div className="h-5 w-5 text-blue-500 mr-2">
                   {otherPartyIcon}
                 </div>
                 <div>
@@ -360,13 +360,13 @@ export function AppointmentCard({
               </h4>
               <div className="flex flex-col gap-1">
                 <div className="flex items-center">
-                  <Calendar className="h-5 w-5 text-emerald-400 mr-2" />
+                  <Calendar className="h-5 w-5 text-blue-500 mr-2" />
                   <p className="text-white">
                     {formatDateTime(appointment.startTime)}
                   </p>
                 </div>
                 <div className="flex items-center">
-                  <Clock className="h-5 w-5 text-emerald-400 mr-2" />
+                  <Clock className="h-5 w-5 text-blue-500 mr-2" />
                   <p className="text-white">
                     {formatTime(appointment.startTime)} -{" "}
                     {formatTime(appointment.endTime)}
@@ -384,7 +384,7 @@ export function AppointmentCard({
                 variant="outline"
                 className={
                   appointment.status === "COMPLETED"
-                    ? "bg-emerald-900/20 border-emerald-900/30 text-emerald-400"
+                    ? "bg-emerald-900/20 border-emerald-900/30 text-blue-500"
                     : appointment.status === "CANCELLED"
                     ? "bg-red-900/20 border-red-900/30 text-red-400"
                     : "bg-amber-900/20 border-amber-900/30 text-amber-400"
@@ -417,7 +417,7 @@ export function AppointmentCard({
                   Video Consultation
                 </h4>
                 <Button
-                  className="w-full bg-emerald-600 hover:bg-emerald-700"
+                  className="w-full bg-blue-600 hover:bg-blue-700"
                   disabled={
                     !isAppointmentActive() || action === "video" || tokenLoading
                   }
@@ -564,7 +564,7 @@ export function AppointmentCard({
 
             <Button
               onClick={() => setOpen(false)}
-              className="bg-emerald-600 hover:bg-emerald-700"
+              className="bg-blue-600 hover:bg-blue-700"
             >
               Close
             </Button>
