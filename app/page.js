@@ -52,13 +52,13 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative h-[500px] lg:h-[600px] rounded-xl overflow-hidden">
+            <div className="relative h-[450px] lg:h-[550px] rounded-xl overflow-hidden">
               <Image
                 src="/banner2.jpeg"
                 alt="Doctor consultation"
                 fill
                 priority
-                className="object-cover md:pt-14 rounded-xl"
+                className="object-cover"
               />
             </div>
           </div>
