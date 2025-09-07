@@ -8,6 +8,14 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { ErrorProvider } from "@/context/error-context";
 import { ErrorModal } from "@/components/ui/error-modal";
 
+export const metadata = {
+  title: "HealthBridge",
+  description: "HealthBridge",
+  icons: {
+    icon: "/logo.jpeg",
+  },
+};
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
