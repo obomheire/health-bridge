@@ -1,6 +1,12 @@
 import { getCurrentUser } from "@/actions/onboarding";
 import { redirect } from "next/navigation";
 
+
+export const metadata = {
+  title: "Onboarding - HealthBridge",
+  description: "Complete your profile to get started with HealthBridge",
+};
+
 export default async function OnboardingLayout({ children }) {
   // Get complete user profile
   const user = await getCurrentUser();

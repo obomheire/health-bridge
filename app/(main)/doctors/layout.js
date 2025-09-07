@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Find Doctors - HealthBridge",
+  description: "Browse and book appointments with top healthcare providers",
+};
+
 export default async function DoctorsLayout({ children }) {
   return (
     <div className="container mx-auto px-4 py-12">
